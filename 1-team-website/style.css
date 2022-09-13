@@ -1,0 +1,56 @@
+
+body {
+    font-family: Helvetica, Arial;
+    margin: 20px;
+}
+
+
+.button {
+    background-color: blue ;
+    color: yellow;
+    cursor: pointer;
+    font-family: Courier;
+    font-size: 12pt;
+    margin-left: 10px;
+    padding: 5px 10px 5px 10px;
+    text-decoration:none;
+}
+
+.button:hover {
+    background-color: white;
+    color: #006699;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.box1 {
+    background-color: blue;
+    border: solid 2px rgb(32, 20, 48);
+    color: yellow;
+    font-family: Courier;
+    font-size: 16pt;
+    padding: 10px;
+    width: 600px;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+.centerText {
+    text-align: center;
+}
+
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    
+  }
+
+    td, th {
+    padding: 5px 10px 5px 10px;
+    border-width: 1px;
+
+  }
