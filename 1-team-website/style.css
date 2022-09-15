@@ -16,6 +16,7 @@ body {
     text-decoration:none;
 }
 
+/* When hovering over button, BR color turns white and blue letters */
 .button:hover {
     background-color: white;
     color: #006699;
@@ -42,6 +43,7 @@ body {
     text-align: center;
 }
 
+/* sets things into center of page (text) */
 .menu {
     margin-left: auto;
     margin-right: auto;
@@ -53,4 +55,12 @@ body {
     padding: 5px 10px 5px 10px;
     border-width: 1px;
 
+  }
+
+  .background {
+    background: url(https://cdn.abcotvs.com/dip/images/24996_kgo-windows-bliss-040714-1280.jpg?w=1600) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   }
