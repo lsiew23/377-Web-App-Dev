@@ -64,3 +64,14 @@ body {
   -o-background-size: cover;
   background-size: cover;
   }
+
+  .coyote {
+    position: static;
+    left: 30px;
+
+  }
+
+  .roadrunner {
+    position: static;
+    right: 30px;
+  }
