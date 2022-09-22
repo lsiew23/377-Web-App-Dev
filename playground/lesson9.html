@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Your Page Title</title>
+    </head>
+
+    <script>
+
+        window.onload = function(){
+
+            var carObject1 = {
+                 make: 'BMW',
+                 model: 'M3',
+                 mpg: 23,
+                 color: 'white',
+            };
+
+            var carObject2 = {
+                make: 'Honda',
+                model: 'Pilot',
+                mpg: 27,
+                color: 'black',
+            };
+
+            var carObject3 = {
+                make: 'Aston Martin',
+                model: 'Phantom',
+                mpg: 12,
+                color: 'gold',
+            };
+           
+
+
+            var cars = [carObject1, carObject2, carObject3]
+            var mpg = [23, 12, 25]
+
+        var html = "";
+        for (var i = 0; i < cars.length; i++) {
+            html += '<li>' + cars[i].make + ' ' + cars[i].model + ' (' +  cars[i].mpg + ' mpg)</li>';
+
+
+        }
+        
+        document.getElementById("car_names").innerHTML = html;
+
+        }
+        
+
+        </script>
+        
+
+<body>
+        <ul id = "car_names">
+            
+        </ul>
+    </body>
+</html>
