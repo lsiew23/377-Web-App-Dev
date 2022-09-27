@@ -1,4 +1,8 @@
-p {
+.answers {
     /* display:inline; */
     color: blue;
+}
+
+.values {
+    color: green;
 }

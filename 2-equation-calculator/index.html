@@ -22,8 +22,19 @@
             <input type="button" value="calculate" onclick="calcVelocity();">
           </form> 
           
-          <label for="velocity">The velocity is:</label>
-          <p id="velocity"></p>
+          
+          <p>The velocity is: <span class = "answers" id="velocity"></span></p>
 
+          <form>
+
+            <label for="average">Enter numbers you want to average:</label>
+            <input type="text" id="num" value="">
+            <!-- <input type="button" value="Add" onclick="addToList();"> -->
+            <button type = "button" onclick="addToList();">append</button>
+            <button type = "button" onclick="avgNum();">average</button>
+
+          </form>
+          <p>Values: <span class = "values" id="list"></span></p>
+          <p>The average is: <span class = "answers" id="result"></span></p>
     </body>
 </html>
