@@ -10,8 +10,9 @@
     </head>
 
     <body>
-
-        <h2>Velocity Calculator</h2>
+      <h1>A Couple Of Equations</h1>
+        <br>
+        <h3>Velocity Calculator</h2>
 
         <form>
 
@@ -25,6 +26,8 @@
           
           <p>The velocity is: <span class = "answers" id="velocity"></span></p>
 
+          <br>
+          <h3>Average Calculator</h3>
           <form>
 
             <label for="average">Enter numbers you want to average:</label>
@@ -36,5 +39,38 @@
           </form>
           <p>Values: <span class = "values" id="list"></span></p>
           <p>The average is: <span class = "answers" id="result"></span></p>
+
+          <br>
+          <h3>Sum Error Calculator</h3>
+          <form>
+            <label for="value1"> Enter 1st value and error</label>
+            <input type="text" id="value1" value="">
+            ±
+            <input type="text" id="error1" value="">
+            <br>
+            <label for="value2"> Enter 2nd value and error</label>
+            <input type="text" id="value2" value="">
+            ±
+            <input type="text" id="error2" value="">
+            <br>
+            <button type="button" onclick="calcError();">calculate</button>
+            
+          </form>
+
+          <p>The sum of the two values with error is: <span class = "answers" id="answer"></span></p>
+
+          <h3>Pythagorean Theorem</h3>
+
+          <form> 
+            <label for="a"> Enter (a) value:</label>
+            <input type="text" id="a" value="">
+            <label for="b"> Enter (b) value:</label>
+            <input type="text" id="b" value="">
+            <br>
+            <button class="centerText" type="button" onclick="pythagorean();">find c</button>
+          </form>
+
+          <p>equation (a² + b² = c²): <span class = "values" id="equation"></span></p>
+          <p>C = <span class = "answers" id = "resultC"></span></p>
     </body>
 </html>
