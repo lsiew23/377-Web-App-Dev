@@ -1,4 +1,5 @@
 var numList = [];
+var sigfigRead = [];
 
 function calcVelocity() {
  
@@ -30,14 +31,17 @@ function addToList(){
 }
 
 function calcError(){
-        var value1 = parseInt(document.getElementById("value1").value);
-        var value2 = parseInt(document.getElementById("value2").value);
-        var error1 = parseInt(document.getElementById("error1").value);
-        var error2 = parseInt(document.getElementById("error2").value);
 
-        var answer = value1 + value2;
+        var value1 = parseFloat(document.getElementById("value1").value);
+        var value2 = parseFloat(document.getElementById("value2").value);
+        var error1 = parseFloat(document.getElementById("error1").value);
+        var error2 = parseFloat(document.getElementById("error2").value);
+        
+        var valueCalc = value1 + value2;
+        var errorCalc = Math.sqrt((Math.pow(error1, 2) + Math.pow(error2, 2)));
 
-        document.getElementById("answer").innerHTML = answer;
+        document.getElementById("valueCalc").innerHTML = valueCalc;
+        document.getElementById("errorCalc").innerHTML = errorCalc;
 
 }
 
@@ -51,3 +55,23 @@ function pythagorean(){
 
         document.getElementById("resultC").innerHTML = c;
 }
+
+var submitAnswer = function() {
+
+        var radios = document.getElementsByName('choice');
+        var val= "";
+        for (var i = 0, length = radios.length; i < length; i++) {
+            if (radios[i].checked) {
+               val = radios[i].value; 
+               break;
+             }
+        }
+        
+        if (val == "" ) {
+          alert('please select choice answer');
+        } else if ( val == "pancakes" ) {
+          alert('Answer is correct !');
+        } else {
+          alert('Answer is wrong');
+        }
+      };

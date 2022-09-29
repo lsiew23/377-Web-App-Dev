@@ -9,10 +9,23 @@
 
     </head>
 
-    <body>
-      <h1>A Couple Of Equations</h1>
+    <body class="background">
+
+      <p class = "rainbow">A Couple Of Equations</p><br>
+
+      <form>
+        <label for="cars">Which is better?</label> 
         <br>
-        <h3>Velocity Calculator</h2>
+        <!-- <select name="bekfest" id="bekfest" multiple>
+          <option value="pancakes">pancakes</option>
+          <option value="waffles">waffles</option>
+        </select> -->
+        <input type="radio" name="choice" value="pancakes"> pancakes<br>
+        <input type="radio" name="choice" value="waffles"> waffles<br>
+        <button onclick="submitAnswer()">Submit Answer</button>
+      </form>
+
+      <h3 class = "header3">Velocity Calculator</h2>
 
         <form>
 
@@ -23,11 +36,10 @@
             <input type="button" value="calculate" onclick="calcVelocity();">
           </form> 
           
-          
           <p>The velocity is: <span class = "answers" id="velocity"></span></p>
 
           <br>
-          <h3>Average Calculator</h3>
+          <h3 class="header3">Average Calculator</h3>
           <form>
 
             <label for="average">Enter numbers you want to average:</label>
@@ -41,7 +53,7 @@
           <p>The average is: <span class = "answers" id="result"></span></p>
 
           <br>
-          <h3>Sum Error Calculator</h3>
+          <h3 class="header3">Sum Error Calculator</h3>
           <form>
             <label for="value1"> Enter 1st value and error</label>
             <input type="text" id="value1" value="">
@@ -57,9 +69,13 @@
             
           </form>
 
-          <p>The sum of the two values with error is: <span class = "answers" id="answer"></span></p>
+          <p>The sum of the two values with error is: 
+            <span class = "answers" id="valueCalc"></span> 
+            ± 
+            <span class = "answers" id="errorCalc"></span>
+          </p>
 
-          <h3>Pythagorean Theorem</h3>
+          <h3 class="header3">Pythagorean Theorem</h3>
 
           <form> 
             <label for="a"> Enter (a) value:</label>
