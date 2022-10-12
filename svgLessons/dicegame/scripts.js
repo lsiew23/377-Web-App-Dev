@@ -1,5 +1,7 @@
 var arr = [];
-var remember;
+//var remember;
+var point = 0; // 0 represents first mode and anything else is mode 2 
+              // mode 2 makes it so if you get a 7 you lose.
 /*
  * Prepares the game with an initial die roll so there isn't a
  * strange 7-pip roll displayed.
@@ -13,7 +15,7 @@ $(document).ready(function () {
  */
 function rollDice(){
     var total = rollDie('d1') + rollDie('d2');
-
+    $("#printTotal").html('Dice Roll: ' + total + ' Point: ' + point);
     checkWin(total);
 }
 
@@ -57,6 +59,7 @@ function rollDie(dieNum) {
     }
 
     return roll;
+    
 }
 
 function checkWin(total){
@@ -64,20 +67,40 @@ function checkWin(total){
     var win = "YOU WIN!"
     var lose = "YOU LOSE!"
     var again = "ROLL AGAIN..."
-    remember = arr[0];
-    
 
-    if(total == 7 || total == 11) {
-        $("#checkWinner").html(win);
-    }else if(total == 2 || total == 3 || total == 12){
-        $("#checkWinner").html(lose);
+    if(point == 0){
+        if(total == 7 || total == 11) {
+                $("#checkWinner").html(win);
+            }else if(total == 2 || total == 3 || total == 12){
+                $("#checkWinner").html(lose);
+            }else{
+                $("#checkWinner").html(again);
+                point = total;
+                
+            }
     }else{
-        $("#checkWinner").html(again);
-        checkAgain();
+        if(point == total){
+
+            if(total == point){
+                $("#checkWinner").html(win);
+                point = 0;
+            }else if(total == 7){
+                $("#checkWinner").html(lose);
+                point = 0;
+            }
+        }
+
     }
 }
 
-function checkAgain(remember){
-    
-}
 
+// remember = arr[0];
+
+    // if(total == 7 || total == 11) {
+    //     $("#checkWinner").html(win);
+    // }else if(total == 2 || total == 3 || total == 12){
+    //     $("#checkWinner").html(lose);
+    // }else{
+    //     $("#checkWinner").html(again);
+    //     checkAgain();
+    // }

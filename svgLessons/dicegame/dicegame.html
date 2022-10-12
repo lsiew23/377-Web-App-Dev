@@ -13,7 +13,7 @@
 
         <h1>Craps</h1>
 
-        <svg width="600" height="600">
+        <svg width="500" height="300">
 
             <rect id="d1" class="die" x="100" y="100" width="100" height="100" />
             <circle id="d1p1" class="pip" cx="125" cy="125" r="5"  />
@@ -34,8 +34,9 @@
             <circle id="d2p7" class="pip" cx="375" cy="175" r="5" />
         </svg>
 
-        <button onclick="rollDice()">Roll the Die!</button>
-        
+        <br>
+        <button class= "button" onclick="rollDice()">Roll the Die!</button>
+        <h1 id="printTotal"></h1>
         <h1 id="checkWinner"></h1>
     </body>
 </html>
