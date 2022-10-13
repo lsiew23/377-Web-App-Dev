@@ -6,6 +6,12 @@ var point = 0; // 0 represents first mode and anything else is mode 2
  * Prepares the game with an initial die roll so there isn't a
  * strange 7-pip roll displayed.
  */
+
+var win = "YOU WIN!"
+var lose = "YOU LOSE!"
+var again = "ROLL AGAIN..."
+
+
 $(document).ready(function () {
     rollDie();
 });
@@ -64,10 +70,7 @@ function rollDie(dieNum) {
 
 function checkWin(total){
     arr.push(total);
-    var win = "YOU WIN!"
-    var lose = "YOU LOSE!"
-    var again = "ROLL AGAIN..."
-
+    
     if(point == 0){
         if(total == 7 || total == 11) {
                 $("#checkWinner").html(win);
@@ -79,17 +82,20 @@ function checkWin(total){
                 
             }
     }else{
-        if(point == total){
-
-            if(total == point){
-                $("#checkWinner").html(win);
-                point = 0;
-            }else if(total == 7){
-                $("#checkWinner").html(lose);
-                point = 0;
-            }
+        if(total == point){
+            $("#checkWinner").html(win);
+            point = 0;
+        }else if(total == 7){
+            $("#checkWinner").html(lose);
+            point = 0;
         }
+    }
 
+}
+
+function bet(num){
+    if($("checkWinner").html() == win){
+        
     }
 }
 

@@ -35,8 +35,15 @@
         </svg>
 
         <br>
-        <button class= "button" onclick="rollDice()">Roll the Die!</button>
+        <button onclick="rollDice()">Roll the Die!</button>
         <h1 id="printTotal"></h1>
         <h1 id="checkWinner"></h1>
+
+        <form>
+            Bet: 
+            <input type="text" placeholder="Enter your bet" size="50" id="betNum">
+            
+            <button onclick="bet(betNum)">Place Bet</button>
+        </form>
     </body>
 </html>
