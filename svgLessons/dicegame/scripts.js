@@ -1,4 +1,6 @@
-var arr = [];
+// var arr = [];
+var betNum = 0;
+var total = 100;
 //var remember;
 var point = 0; // 0 represents first mode and anything else is mode 2 
               // mode 2 makes it so if you get a 7 you lose.
@@ -69,7 +71,7 @@ function rollDie(dieNum) {
 }
 
 function checkWin(total){
-    arr.push(total);
+    // arr.push(total);
     
     if(point == 0){
         if(total == 7 || total == 11) {
@@ -91,12 +93,24 @@ function checkWin(total){
         }
     }
 
+    bet(betNum);
+
+}
+
+function addBet(){
+    console.log("here");
+    betNum = parseInt($("#betting").html());
+    console.log(betNum);
 }
 
 function bet(num){
-    if($("checkWinner").html() == win){
-        
+    if($("#checkWinner").html() == win){
+        total += num;
+    }else if($("#checkWinner").html() == lose){
+        total -= num;
     }
+    console.log(total + "_" +  num);
+    $("#betting").html(total);
 }
 
 
