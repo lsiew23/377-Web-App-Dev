@@ -14,17 +14,29 @@
         <h1>Duck Duck Goose</h1>
 
         <svg width="1025" height="1025">
-            <circle cx="100" cy="300" r="75" stroke="darkorange" stroke-width="1" fill="yellow" />
-            <circle cx="199" cy="240" r="40" stroke="darkorange" stroke-width="1" fill="yellow" />
-            <polygon points="270,250 230,260 230,220" style="fill:lime;stroke:darkorange;stroke-width:1" />
 
-            <circle cx="375" cy="300" r="75" stroke="darkorange" stroke-width="1" fill="yellow" />
-            <circle cx="650" cy="300" r="75" stroke="darkorange" stroke-width="1" fill="yellow" />
-            <circle cx="925" cy="300" r="75" stroke="darkorange" stroke-width="1" fill="yellow" />
+            <symbol id="duck">
+                <circle cx="50" cy="50" r="40" stroke="darkorange" stroke-width="1" fill="yellow" />
+                <circle cx="85" cy="15" r="15" stroke="darkorange" stroke-width="1" fill="yellow" />
+                <polygon points="115,15 100,7 100,22" style="fill:lime;stroke:darkorange;stroke-width:1" />
+            </symbol>
+
+            1<use href="#duck" x="100" y="100" visibility="visible"/>
+            2<use href="#duck" x="250" y="100" visibility="visible"/>
+            3<use href="#duck" x="400" y="100" visibility="visible"/>
+            4<use href="#duck" x="550" y="100" visibility="visible"/>
+            1<use href="#duck" x="100" y="200" visibility="visible"/>
+            2<use href="#duck" x="250" y="200" visibility="visible"/>
+            3<use href="#duck" x="400" y="200" visibility="visible"/>
+            4<use href="#duck" x="550" y="200" visibility="visible"/>
+            1<use href="#duck" x="100" y="300" visibility="visible"/>
+            2<use href="#duck" x="250" y="300" visibility="visible"/>
+            3<use href="#duck" x="400" y="300" visibility="visible"/>
+            4<use href="#duck" x="550" y="300" visibility="visible"/>
+            
 
             
-            
-        </svg>
+            </svg>
 
         
     </body>
