@@ -1,1 +1,12 @@
-hwfefhequfqewfpwefweq
+body {
+    font-family: Helvetica, Arial;
+    margin: 20px;
+}
+
+.background {
+    background-color: rgb(9, 158, 9);
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
