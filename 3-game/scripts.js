@@ -5,12 +5,18 @@ var arr = ["duck1", "duck2", "duck3", "duck4", "duck5", "duck6",
 
 var goose = Math.floor(Math.random() * 11);
 
+function randomizeGoose(){
+    goose = Math.floor(Math.random() * 11);
+}
+
+
 
 function pick(duckNum){
     $("#duck" + duckNum).css("visibility", "hidden");
     duck = duckNum;
     goosedOrNah();
     count++;
+    console.log(goose);
 }
 
 function goosedOrNah(){
@@ -18,18 +24,20 @@ function goosedOrNah(){
     {
         $("#checkWinner").html("You got goosed!");
         timeGoose();
+        
     
-    }else if(count == 12)
+    }else if(count == 10)
     {
         $("#checkWinner").html("You won!");
         timeGoose();
+        
     }else{
         $("#checkWinner").html("Duck");
     }
 }
 
 function timeGoose(){
-    $("#duck1").css.color= "white";
+    //$("#duck").css.fill= "white";
     setTimeout(reset, 5000);
 }
 
@@ -39,6 +47,7 @@ function reset(){
       }
       count = 0;
       $("#checkWinner").html("");
+      randomizeGoose();
 }
 
 // function guess(){
