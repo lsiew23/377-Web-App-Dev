@@ -37,16 +37,19 @@ function goosedOrNah(){
 }
 
 function timeGoose(){
-    //$("#duck").css.fill= "white";
+    //$("#duck" + duckNum).css("fill", "white");
+    $("#goose").css("visibility", "visible");      
     setTimeout(reset, 5000);
 }
 
 function reset(){
+    $("#goose").css("visibility", "hidden");
     for (let i = 0; i < arr.length; i++) {
         $("#" + arr[i]).css("visibility", "visible");
       }
       count = 0;
       $("#checkWinner").html("");
+      
       randomizeGoose();
 }
 

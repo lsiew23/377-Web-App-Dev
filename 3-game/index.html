@@ -27,10 +27,11 @@
         <svg width="700" height="700">
 
             <symbol id="duck">
-                <circle id="bColor" cx="50" cy="50" r="40" stroke="darkorange" stroke-width="1" fill="yellow" />
-                <circle id="hColor"cx="85" cy="15" r="15" stroke="darkorange" stroke-width="1" fill="yellow" />
+                <circle cx="50" cy="50" r="40" stroke="darkorange" stroke-width="1" fill="yellow" />
+                <circle cx="85" cy="15" r="15" stroke="darkorange" stroke-width="1" fill="yellow" />
                 <polygon points="115,15 100,7 100,22" style="fill:lime;stroke:darkorange;stroke-width:1" />
-                <polygon id="tColor" points="0,80 0,45 10,60" style="fill: yellow;stroke:darkorange;stroke-width:1" />
+                <polygon points="0,80 0,45 10,60" style="fill: yellow;stroke:darkorange;stroke-width:1" />
+                <circle cx="95" cy="10" r="3.5" stroke="grey" stroke-width="1" fill="black" />
             </symbol>
 
             <use id="duck1" onclick="pick(1)" href="#duck" x="100" y="100" visibility="visible"/>
@@ -46,6 +47,14 @@
             <use id="duck11" onclick="pick(11)" href="#duck" x="400" y="300" visibility="visible"/>
             <use id="duck12" onclick="pick(12)" href="#duck" x="550" y="300" visibility="visible"/>
             
+            <g id="goose" visibility="hidden">
+                <circle  cx="380" cy="275" r="160" stroke="lightgrey" stroke-width="1" fill="white" />
+                <circle  cx="520" cy="95" r="68" stroke="lightgrey" stroke-width="1" fill="white" />
+                <polygon points="629,100 589,74 589,114" style="fill:lime;stroke:darkorange;stroke-width:1" />
+                <polygon points="160,420 160,250 225,320" style="fill: yellow;stroke:darkorange;stroke-width:1" />
+                <circle cx="550" cy="80" r="25" stroke="grey" stroke-width="1" fill="black" />
+            </g>
+
             </svg>
 
         
