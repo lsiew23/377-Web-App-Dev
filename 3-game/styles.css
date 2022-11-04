@@ -10,3 +10,31 @@ body {
   -o-background-size: cover;
   background-size: cover;
   }
+
+  .rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+    animation: colorRotate 6s linear 0s infinite;
+  }
+
+  /* @keyframes allows to constantly change the style along an animation sequence */
+  @keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
