@@ -1,4 +1,3 @@
-
 def part1():
     maximum = 0
     for line in inputs:
