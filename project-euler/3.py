@@ -1,13 +1,15 @@
-def primeFactor(num):
-    
-    while :
-        if num%i == 0 or i%5 == 0:
-            total+=i
+import math
 
+def largestPrimeFactor(num):
+    while num % 2 == 0:
+        largest_factor = 2
+        num = num / 2
+    for i in range(3, int(math.sqrt(num))+1, 2):
+        while num % i == 0:
+            largestFactor = i
+            num = num / i
+    if num > 2:
+        largestFactor = num
+    return int(largestFactor)
 
-
-
-
-
-
-print(primeFactor(600851475143))
+print(largestPrimeFactor(600851475143))
