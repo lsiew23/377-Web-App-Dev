@@ -1,8 +1,9 @@
-
 total = 0
+num = 1
 
-while i 
-    if i%3 == 0 or i%5 == 0:
-        total+=i
+while num < 1000:
+    if num%3 == 0 or num%5 == 0:
+        total+=num
+    num+=1
 
 print(total)
