@@ -18,7 +18,7 @@ print(maxp)
 
             
 # given_string = 'abcdef'
-# n = 3
+# n = 2
 # print([(given_string[i:i+n]) for i in range(0, len(given_string), n)])
 
 
