@@ -6,6 +6,14 @@
     <body>
         <h1>Ticket List</h1>
 
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Problem</th>
+                <th>Priority</th>
+                <th>Contact Email</th>
+
+
         <?php
 
         $servername="localhost";
@@ -27,6 +35,10 @@
 
         while ($row = $result->fetch_assoc())
         {
+            echo "<tr>";
+            echo "<td>". $row['tkt_problem'] . "<td>";
+            echo "<td>". $row['tkt_priority'] . "<td>";
+            echo "<td>". $row['tkt_contact_email'] . "<td>";
             echo $row['tkt_problem'];
         }
 

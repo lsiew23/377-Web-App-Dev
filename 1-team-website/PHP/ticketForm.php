@@ -10,7 +10,7 @@
     <h1>Welcome To The Ticketing System</h1>
     <br></br>
 
-    <form action='ticket-submit.php' method='POST'>
+    <form action='ticketSubmit.php' method='POST'>
         <span class="label">Problem: </span><input type="text" id="problem" name="problem" />
         <br>
         <br>
