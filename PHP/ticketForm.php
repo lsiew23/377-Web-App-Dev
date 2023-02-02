@@ -1,3 +1,9 @@
+<?php
+
+include('library.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

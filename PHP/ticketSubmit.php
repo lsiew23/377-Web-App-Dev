@@ -1,3 +1,9 @@
+<?php
+
+include('library.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +19,8 @@
 
     <?php
     extract($_REQUEST);
-    
 
-
+    $conn = get_database_connection();
 
     $servername="localhost";
     $username="root";
