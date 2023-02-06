@@ -48,7 +48,14 @@ include('library.php');
 
 
     ?>
+    <br/>
+    <br/>
     <a href="ticketform.php">Back to the Ticket Form</a>
+
+    <br/>
+    <br/>
+    <a href="ticketlist.php">Back to the Ticket List</a>
+
     
 </body>
 </html>

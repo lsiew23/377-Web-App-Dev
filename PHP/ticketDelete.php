@@ -2,20 +2,18 @@
 
 include('library.php');
 
-extract($request);
+extract($_REQUEST);
 
 $conn = get_database_connection();
 
-$SQL = "DELETE FROM tickets WHERE tkt_id = $id";
+$sql = "DELETE FROM tickets WHERE tkt_id = $id";
 
-if ($conn->query($sql) === TRUE) {
+if ($conn->query($sql) == TRUE) {
     header('Location: ticketList.php');
-} ellse {
+} else {
     echo "Error deleting record: " . $conn->error;
 }
 
 $conn->close();
-
-
 
 ?>

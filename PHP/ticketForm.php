@@ -17,15 +17,22 @@ include('library.php');
     <br></br>
 
     <form action='ticketSubmit.php' method='POST'>
-        <span class="label">Problem: </span><input type="text" id="problem" name="problem" />
-        <br>
-        <br>
-        <span class="label">Priority: </span><input type="select" id="priority" name="priority" />
-        <br>
-        <br>
-        <span class="label">Contact Email: </span><input type="text" id="contact-email" name="contactEmail" />
-        <br>
-        <br>
+        <span class="label">Problem: </span><br/><input type="text" id="problem" name="problem" />
+        <br/>
+        <br/>
+        <span class="label">Priority: </span>
+        <!-- <input type="select" id="priority" name="priority" /> -->
+        <br/>
+        <SELECT name="priority">
+            <option value="1">High</option>
+            <option value="2">Medium</option>
+            <option value="3">Low</option>
+        </SELECT>
+        <br/>
+        <br/>
+        <span class="label">Contact Email: </span><br/><input type="text" id="contact-email" name="contactEmail" />
+        <br/>
+        <br/>
         <input type="submit">
     </form>
 </body>
