@@ -10,7 +10,7 @@
 $sql = <<<SQL
 SELECT *
   FROM tickets
- WHERE tkt_id = {$id}
+ WHERE tkt_id = $id
 SQL;
 
 $conn = get_database_connection();
